@@ -1,0 +1,75 @@
+body {
+	background: #202040;
+	color: #ffffff;
+}
+main {
+	z-index: 1;
+}
+.hidden {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+#menu-bar {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	#menu-bar {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+#menu-bar #logo {
+	padding: 10px 25px;
+}
+
+#menu-bar #static-items {
+	/* outline: 2px solid #107010; */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#menu-bar #static-items #menu-buttons {
+	padding: 10px 25px;
+}
+
+@media (min-width: 768px) {
+	#menu-bar #static-items {
+		width: 50%;
+	}
+	#menu-bar #static-items #menu-buttons {
+		display: none;
+	}
+}
+
+#menu-bar #pop-out {
+	outline: 1px solid #c010a0;
+	width: 100%;
+	background: #202040;
+	color: #ffffff;
+	z-index: 50;
+	position: relative;
+}
+
+@media (min-width: 768px) {
+	#menu-bar #pop-out {
+		display: block;
+	}
+	#menu-bar #pop-out nav ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: space-evenly;
+		-ms-flex-pack: space-evenly;
+		justify-content: space-evenly;
+	}
+}

@@ -1,0 +1,76 @@
+{
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+        "at-rule-empty-line-before": [
+            "always",
+            {
+                "except": ["first-nested", "inside-block", "blockless-after-blockless"]
+            }
+        ],
+        "scss/at-import-partial-extension-blacklist": ["scss", {
+            "message": ".scss extension isn't necessary for imports",
+            "severity": "warning"
+        }],
+        "block-closing-brace-newline-before": "always-multi-line",
+        "block-opening-brace-newline-after": "always-multi-line",
+        "block-no-empty": [
+            true,
+            {
+                "severity": "warning"
+            }
+        ],
+        "color-hex-case": [
+            "lower",
+            {
+                "message": "Lowercase letters are easier to distinguish from numbers"
+            }
+        ],
+        "color-named": [
+            "never",
+            {
+                "message": "We would prefer using hex, rgb, or variables for colors",
+                "severity": "warning"
+            }
+        ],
+        "comment-empty-line-before": [
+            "always",
+            {
+            "ignore": ["stylelint-commands", "after-comment"]
+            }
+        ],
+        "declaration-block-semicolon-newline-after": "always-multi-line",
+        "declaration-property-value-disallowed-list": {
+            "border": []
+        },
+        "font-family-no-duplicate-names": true,
+        "indentation": [
+            "tab",
+            {
+                "message": "Please use tab for indentation.",
+                "severity": "warning"
+            }
+        ],
+        "max-empty-lines": 1,
+        "max-nesting-depth": 3,
+        "no-duplicate-at-import-rules": true,
+        "no-duplicate-selectors": true,
+        "property-no-unknown": [
+            true,
+            {
+                "message": "This is not a recognized property",
+                "severity": "warning"
+            }
+        ],
+        "selector-class-pattern": ["^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+            {
+                "resolveNestedSelectors": true,
+                "message": "We prefer the class names to use kebab-case",
+                "severity": "warning"
+            }
+        ],
+        "selector-max-id": 5,
+        "string-quotes": "single",
+        "string-no-newline": true,
+        "value-list-max-empty-lines": 0
+    }
+}

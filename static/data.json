@@ -1,0 +1,20 @@
+[
+	{
+		"biography": "Cras id consequat augue, non malesuada diam. Sed vitae ipsum ante. Cras efficitur non tellus eget pharetra. Donec sem ligula, eleifend id pellentesque tristique, tincidunt ac dolor. Sed elementum purus mi, eu volutpat tortor luctus non. Donec nisl odio, consequat sed neque ultrices, aliquam consectetur est. Donec blandit vehicula mi, ut dapibus nisi pellentesque ac. Praesent sed mattis tellus. Donec porttitor ipsum eu ante mattis sodales. Cras arcu metus, vehicula non enim vel, condimentum gravida ipsum. Suspendisse augue nisl, finibus a tristique ac, congue vel urna. Sed ac vehicula sem. Quisque aliquam tempus mauris, non tristique dui porttitor bibendum. ",
+		"photo": {
+			"url": "https://media.istockphoto.com/photos/the-anvil-morning-mist-picture-id535499464?b=1&k=20&m=535499464&s=170667a&w=0&h=JOKbtcOwVAYSVp3tB_MYIupW4HXVinQFdz0vY2CLMBU=",
+			"alt": "jungle"
+		},
+		"email": "jdbrewerhofmann@gmail.com",
+		"links": [
+			{
+				"name": "blog",
+				"url": "https://dev.to/jdbrewerhofmann"
+			},
+			{
+				"name": "linkedin",
+				"url": "https://dev.to/jdbrewerhofmann"
+			}
+		]
+	}
+]
