@@ -34,8 +34,11 @@
         >
             <nav>
                 <ul>
-                    <span>MENU</span>
-                    <!-- <li>Home</li> -->
+                     <li>
+                        <nuxt-link to="/">
+                            home
+                        </nuxt-link>
+                    </li>
                     <li>
                         <nuxt-link to="/projects">
                             projects
@@ -82,7 +85,8 @@ export default {
 <style scoped>
     header {
         border-bottom: 1px solid #ffffff;
-        height: 50px;
+        /* height: 50px; */
+        margin: 0 1rem;
         /* display: flex; */
         /* align-items: center;
         height: 60px;

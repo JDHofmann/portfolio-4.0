@@ -18,7 +18,7 @@ export default {
 		},
 	},
 	mounted() {
-		console.log(this.id);
+		// console.log(this.id);
 	},
 };
 </script>
@@ -29,6 +29,7 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10px;
+	margin-top: 1rem;
+	padding: 1rem 0;
 }
 </style>

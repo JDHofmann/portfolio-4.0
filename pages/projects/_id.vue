@@ -1,7 +1,39 @@
 <template>
-	<div>
-		<h1>{{ project.name }}</h1>
-	</div>
+	<main>
+		<div class="hero">
+			<h1>{{ project.name }}</h1>
+			<h2>{{ project.subhead }}</h2>
+		</div>
+		<section>
+			<h3>Images</h3>
+			<div id="project-images">
+				<div v-for="(img, i) in project.images" :key="i">
+					<h4>{{ img.title }}</h4>
+					<img :src="img.path" :alt="img.title" />
+				</div>
+			</div>
+		</section>
+		<!-- <nuxt-img
+			provider="cloudinary"
+			src="/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250.jpg"
+			alt=""
+		/> -->
+		<iframe
+			v-if="project.iframes"
+			:src="project.iframes[0].path"
+			frameborder="0"
+			:width="project.iframes[0].width"
+			:height="project.iframes[0].height"
+		></iframe>
+		<section>
+			<p>{{ project.description }}</p>
+			<ul>
+				<li v-for="(link, i) in project.links" :key="i">
+					<a :href="link.path">{{ link.title }}</a>
+				</li>
+			</ul>
+		</section>
+	</main>
 </template>
 
 <script>
@@ -18,3 +50,20 @@ export default {
 	mounted() {},
 };
 </script>
+
+<style scoped lang="scss">
+#project-images {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#project-images div {
+	width: 20%;
+	padding: 1rem 2rem 2rem;
+}
+#project-images img {
+	width: 100%;
+	border: 5px solid $blue;
+}
+</style>

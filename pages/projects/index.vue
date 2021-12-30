@@ -1,14 +1,19 @@
 <template>
-	<div>
-		<h1>Projects</h1>
-		<ProjectCard
-			v-for="project in projects"
-			:key="project.id"
-			:id="project.id"
-			:name="project.name"
-			:test="test"
-		/>
-	</div>
+	<main>
+		<div class="hero">
+			<h1>Projects</h1>
+		</div>
+		<section>
+			<ul>
+				<ProjectCard
+					v-for="project in projects"
+					:key="project.id"
+					:id="project.id"
+					:name="project.name"
+				/>
+			</ul>
+		</section>
+	</main>
 </template>
 
 <script>

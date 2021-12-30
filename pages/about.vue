@@ -1,9 +1,13 @@
 <template>
-	<div>
-		<h1>About</h1>
-		<p>{{ biography }}</p>
-		<img :src="photo.url" :alt="photo.alt" />
-	</div>
+	<main>
+		<div class="hero">
+			<h1>About</h1>
+		</div>
+		<section>
+			<p>{{ biography }}</p>
+			<img :src="photo.url" :alt="photo.alt" />
+		</section>
+	</main>
 </template>
 
 <script>

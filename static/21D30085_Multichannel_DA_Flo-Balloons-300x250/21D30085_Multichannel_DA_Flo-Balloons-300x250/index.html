@@ -1,0 +1,111 @@
+<!doctype html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Progressive</title><link rel="stylesheet" type="text/css" href="main.css?v1638283237375"></head><body onload="banner.init();"><div id="ad"><div id="content"><div id="background-balloons"><img id="balloon-1-d" class="balloon-1-d" src="balloon_1.png"> <img id="balloon-2-c" class="balloon-2-c" src="balloon_2.png"> <img id="balloon-3-c" class="balloon-3-c" src="balloon_3.png"></div><div id="middle-balloons"><img id="balloon-1-e" class="balloon-1-e" src="balloon_1.png"> <img id="balloon-2-d" class="balloon-2-d" src="balloon_2.png"> <img id="balloon-3-d" class="balloon-3-d" src="balloon_3.png"> <img id="balloon-1-f" class="balloon-1-f" src="balloon_1.png"></div><img id="text-1" class="text" src="text-1.png"><img id="text-2" class="text" src="text-2.png"><img id="flo-1" class="flo" src="flo-1.png"> <img id="flo-2" class="flo" src="flo-2.png"><div id="falling-balloons"><img id="balloon-3-b" class="balloon-3-b" src="balloon_3.png"> <img id="balloon-1-b" class="balloon-1-b" src="balloon_1.png"> <img id="balloon-2-b" class="balloon-2-b" src="balloon_2.png"> <img id="balloon-1-c" class="balloon-1-c" src="balloon_1.png"> <img id="balloon-3-a" class="balloon-3-a" src="balloon_3.png"> <img id="balloon-2-a" class="balloon-2-a" src="balloon_2.png"> <img id="balloon-1-a" class="balloon-1-a" src="balloon_1.png"></div></div><div id="cta"><a class="cta-button">Bundle now</a></div></div><script>//console.log("uber.js");</script><script>//console.log("Common");
+
+/*  ********************* PUBLIC ACCESS *********************  */
+
+function $(id) { return document.getElementById(id) };
+function q(name) {return document.getElementsByClassName(name) };
+function m(selector) {return document.querySelectorAll(selector) };
+var add = document.addEventListener ? 'addEventListener' : 'attachEvent';
+var st = setTimeout;
+
+function cascade() {
+    var el = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ".cascade > *";	//default elements
+    var cl = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "in";				//default class to add
+    var i = 0;
+    var j = 250; //time between steps
+    
+    var n = document.querySelectorAll(el).length;
+    c();
+    
+    function c() {
+        if (i < n) {
+        document.querySelectorAll(el)[i].classList.add(cl);
+        i++;
+        st(c, j);
+        }
+    }
+}
+
+/*  *********************************************************  */
+
+
+
+
+var banner = (function() {
+	'use strict';
+	function banner() {
+		//private variables
+
+		function onEnablerVisible() {
+
+//  put timeline here  //////////////////////////////////////////
+
+			st(function(){
+                // 001: 1-b floats up
+                $("balloon-1-b").classList.add("in");
+                // 001: 2-b floats from right
+                $("balloon-2-b").classList.add("in");
+                // 800: 1-b::2-b collision
+                // 001: 1-a drops from top
+                $("balloon-1-a").classList.add("in");
+                $("balloon-1-c").classList.add("in");
+                $("balloon-3-a").classList.add("in");
+                $("balloon-3-b").classList.add("in");
+                $("cta").classList.add("in");  //CTA must be present by no later than 7 seconds
+                $("ad").classList.add("hover-active");
+                $("background-balloons").classList.add("in");
+                $("middle-balloons").classList.add("in");
+			}, 1);	
+            st(function(){
+                // 750: 2-b floats to right
+                $("balloon-2-b").classList.add("fr2");
+                // 750: 2-a enters from left
+                $("balloon-2-a").classList.add("in");
+            }, 750);
+            st(function(){
+                // 1750: 1-a::2-b collision
+                // 1750 2-b floats off to right
+                $("balloon-2-b").classList.add("out");
+                // 1850: 1-a::1-b collision
+                // 1850: 1-b floats off bottom left
+                $("balloon-1-b").classList.add("out");
+                // 1850: 1-a floats up slightly
+                $("balloon-1-a").classList.add("fr2");
+			}, 1750);
+            st(function(){
+                // 2750 2-a::1-a collision
+                // 2750 1-a floats off to right
+                $("balloon-1-a").classList.add("out");
+                // 2750: 2-a floats off to left
+                $("balloon-2-a").classList.add("out");
+            }, 2750);
+
+            // st(function(){
+            //     $("text-1").classList.add("out");
+            //     $("background-balloons").classList.remove("in");
+
+			// }, 4666);
+            // st(function(){
+            //     $("text-2").classList.add("in");
+            //     $("ad").classList.add("hover-balloon");
+			// }, 5333);
+
+		}
+
+		
+
+
+//  privileged methods  /////////////////////////////////////////
+
+		this.init = function() {
+			onEnablerVisible();
+		};
+	}
+	return new banner();
+
+})();
+
+
+var clickTag = "{{PUB_CLICKTHROUGH.1}}";
+// whole ad clickable
+document.getElementById('ad').addEventListener('click',function(){window.open(window.clickTag, "_blank");});</script><script src="main.js?v1638283237375"></script></body>

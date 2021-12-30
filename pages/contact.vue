@@ -1,11 +1,15 @@
 <template>
-	<div>
-		<h1>Contact</h1>
-		<a :href="`mailto:${email}`">Email</a>
-		<ul v-for="(link, i) in links" :key="i">
-			<li>{{ link.name }}</li>
-		</ul>
-	</div>
+	<main>
+		<div class="hero">
+			<h1>Contact</h1>
+		</div>
+		<section>
+			<a :href="`mailto:${email}`">Email</a>
+			<ul v-for="(link, i) in links" :key="i">
+				<li>{{ link.name }}</li>
+			</ul>
+		</section>
+	</main>
 </template>
 
 <script>
