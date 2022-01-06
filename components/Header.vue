@@ -84,28 +84,13 @@ export default {
 
 <style scoped>
     header {
-        border-bottom: 1px solid #ffffff;
-        /* height: 50px; */
+        border-bottom: 1px solid;
         margin: 0 1rem;
-        /* display: flex; */
-        /* align-items: center;
-        height: 60px;
-        width: 100%; */
-        /* position: fixed; */
     }
-    /* #static-items {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-
-    } */
     button {
         background: none;
-        color: #ffffff;
         width: 40px;
         height: 40px;
         font-size: 15px;
-        outline: none;
-        border: 1px solid;
     }
 </style>

@@ -10,6 +10,7 @@
 					:key="project.id"
 					:id="project.id"
 					:name="project.name"
+					:thumbnail="project.thumbnail"
 				/>
 			</ul>
 		</section>
@@ -27,11 +28,19 @@ export default {
 	methods: {
 		...mapActions(["changeTheme"]),
 	},
+	mounted() {
+		console.log(this.projects);
+	},
 };
 </script>
 
 <style scoped>
 button {
 	border: 5px solid #ffffff;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 </style>

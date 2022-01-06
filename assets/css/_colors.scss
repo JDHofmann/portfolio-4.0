@@ -1,3 +1,17 @@
+@use "sass:map";
+
 $blue: #1080a0;
 // $background: #202040;
 // $foreground: #ffffff;
+
+$midnight-theme: (
+	"primary": #202040,
+	"secondary": #ffffff,
+	"tertiary": #602040,
+);
+
+// $southwest-theme: (
+// 	$primary: #ff7f7f,
+// 	$secondary: #9fffdf,
+// 	$tertiary: #ffc080,
+// );

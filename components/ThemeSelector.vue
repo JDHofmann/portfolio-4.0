@@ -1,8 +1,10 @@
 <template>
 	<section>
-		<button @click="changeTheme('blue-theme')">Blue Theme</button>
+		<button @click="changeTheme('mightnight-theme')">Midnight Theme</button>
 
-		<button @click="changeTheme('red-theme')">Red Theme</button>
+		<button @click="changeTheme('southwest-theme')">Southwest Theme</button>
+
+		<button @click="changeTheme('seventies-theme')">Seventies Theme</button>
 	</section>
 </template>
 
@@ -22,8 +24,7 @@ section {
 	justify-content: space-evenly;
 }
 button {
-	border: 1px solid #ffffff;
-	color: #ffffff;
+	// border: 1px solid;
 	padding: 0.5rem 1rem;
 }
 </style>

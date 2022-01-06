@@ -64,6 +64,6 @@ export default {
 }
 #project-images img {
 	width: 100%;
-	border: 5px solid $blue;
+	border: 1px solid;
 }
 </style>

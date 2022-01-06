@@ -1,0 +1,80 @@
+#menu-bar {
+	/* width: 100%; */
+}
+
+@media (min-width: 768px) {
+	#menu-bar {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+#menu-bar #logo {
+}
+
+#menu-bar #static-items {
+	/* outline: 2px solid #107010; */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menu-bar #static-items #menu-buttons {
+	padding: 10px 0;
+	height: 40px;
+}
+
+@media (min-width: 768px) {
+	#menu-bar #static-items {
+		width: 50%;
+	}
+	#menu-bar #static-items #menu-buttons {
+		display: none;
+	}
+}
+
+#menu-bar #pop-out {
+	width: 100%;
+	z-index: 50;
+	position: absolute;
+	left: 0;
+	top: 61px;
+	background: inherit;
+
+	nav ul li {
+		padding: 0.75rem 1rem;
+		margin: 1rem 0.5rem;
+		border-radius: 10px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	#menu-bar #pop-out {
+		display: block;
+		padding: 10px 0;
+		position: relative;
+		top: 0;
+	}
+	#menu-bar #pop-out nav {
+		padding: 0;
+	}
+	#menu-bar #pop-out nav ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: 40px;
+	}
+	#menu-bar #pop-out nav ul li {
+		padding: 0.5rem 1rem;
+		margin: 0 0 0 1rem;
+		border-radius: 10px;
+	}
+}

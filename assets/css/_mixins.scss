@@ -1,0 +1,15 @@
+@mixin button($color) {
+	&:hover {
+		outline: 3px solid $color;
+	}
+}
+
+@mixin link($color) {
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: 0.33s ease;
+	&:hover {
+		box-shadow: 0 2px 0 0 $color;
+		color: $color;
+	}
+}

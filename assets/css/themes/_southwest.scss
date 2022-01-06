@@ -1,0 +1,162 @@
+.southwest-theme {
+	$primary: #ff7f7f;
+	// $secondary: #9fffdf;
+	$secondary: #88dddd;
+	// $tertiary: #39aa99;
+	$tertiary: #0bb2ae;
+
+	$one: #0bb2ae;
+	$two: #88dddd;
+	$three: #ff6657;
+	$four: #e87b2f;
+	$five: #cc5012;
+	$six: #9d1a0e;
+	$seven: #600000;
+	$eight: #11264e;
+
+	$text: #202020;
+	$text-dark: #101010;
+	$text-light: #ffffff;
+	background: $primary;
+	background: #f8e0d0;
+	background: #ffffff;
+
+	color: $text;
+
+	button {
+		@include button($tertiary);
+	}
+
+	a {
+		@include link($secondary);
+	}
+
+	li:nth-child(1) {
+		background: $one;
+	}
+	li:nth-child(2) {
+		background: $two;
+	}
+	li:nth-child(3) {
+		background: $three;
+	}
+	li:nth-child(4) {
+		background: $four;
+	}
+	li:nth-child(5) {
+		background: $five;
+	}
+	li:nth-child(6) {
+		color: $text-light;
+		background: $six;
+	}
+	li:nth-child(7) {
+		background: $seven;
+		color: $text-light;
+	}
+	li:nth-child(8) {
+		background: $one;
+	}
+	li:nth-child(9) {
+		background: $two;
+	}
+	li:nth-child(10) {
+		background: $three;
+	}
+	li:nth-child(11) {
+		background: $four;
+	}
+	li:nth-child(12) {
+		background: $five;
+	}
+	li:nth-child(13) {
+		color: $text-light;
+		background: $six;
+	}
+	li:nth-child(14) {
+		background: $seven;
+		color: $text-light;
+	}
+
+	img {
+		box-shadow: 15px 15px 0 $secondary;
+	}
+	#menu-bar {
+		background: $eight;
+		color: $text-light;
+		margin: 0;
+		padding: 0 1rem;
+		#pop-out {
+			// top: 60px;
+		}
+		nav {
+			background: $eight;
+			padding: 5rem 0.5rem;
+			color: $text-dark;
+		}
+	}
+	li:nth-child(1) {
+		background: $one;
+		img {
+			box-shadow: -80px 0 0 0 $one;
+		}
+	}
+
+	li:nth-child(2) {
+		background: $two;
+		img {
+			box-shadow: -80px 0 0 0 $two;
+		}
+	}
+
+	li:nth-child(3) {
+		background: $three;
+		img {
+			box-shadow: -80px 0 0 0 $three;
+		}
+	}
+
+	li:nth-child(4) {
+		background: $four;
+		img {
+			box-shadow: -80px 0 0 0 $four;
+		}
+	}
+
+	li:nth-child(5) {
+		background: $five;
+		img {
+			box-shadow: 7-80px 0 0 0 $five;
+		}
+	}
+
+	li:nth-child(6) {
+		background: $six;
+		img {
+			box-shadow: 7-80px 0 0 0 $six;
+		}
+	}
+
+	li:nth-child(7) {
+		background: $seven;
+		img {
+			box-shadow: -80px 0 0 0 $seven;
+		}
+		color: $text-light;
+	}
+	li:nth-child(8) {
+		background: $eight;
+		img {
+			box-shadow: -80px 0 0 0 $eight;
+		}
+		color: $text-light;
+	}
+	li {
+		&.no-background {
+			background: none;
+		}
+		img {
+			transform: translate(40px);
+		}
+	}
+}
