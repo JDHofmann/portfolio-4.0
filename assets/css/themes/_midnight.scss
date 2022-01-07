@@ -2,18 +2,23 @@
 	$primary: #202040;
 	$secondary: #2020c0;
 	$tertiary: #602040;
-	$accent: #9fffdf;
-	$text: #ffffff;
+	$accent: #d2e4f0;
+	// $text: #ffffff;
 
-	$one: #1b143d;
-	$two: #25286b;
-	$three: #5d67a5;
-	$four: #5f4670;
-	$five: #b79a4a;
+	$background: #081d41;
+	$text: #d2e4f0;
+
+	$one: #e0bb8b;
+	$two: #b06c77;
+	$three: #bc8cb9;
+	$four: #a7b6f1;
+	$five: #4f67ad;
+	$six: #1f3684;
 
 	$text-dark: #101010;
 	$text-light: #ffffff;
-	background: $primary;
+
+	background: $background;
 	color: $text;
 
 	button {
@@ -27,52 +32,17 @@
 		box-shadow: 15px 15px 0 $three;
 	}
 
-	li {
-		border: none;
-		color: $text-dark;
-	}
-
-	li:nth-child(1) {
-		background: $one;
-		color: $text-light;
-	}
-	li:nth-child(2) {
-		background: $two;
-	}
-	li:nth-child(3) {
-		background: $three;
-	}
-	li:nth-child(4) {
-		background: $four;
-	}
-	li:nth-child(5) {
-		background: $five;
-	}
-
-	li:nth-child(6) {
-		background: $two;
-	}
-	li:nth-child(7) {
-		background: $three;
-	}
-	li:nth-child(8) {
-		background: $four;
-	}
-	li:nth-child(12) {
-		background: $five;
-	}
 	#menu-bar {
-		background: $five;
-		color: $text-light;
+		background: $six;
 		margin: 0;
 		padding: 0 1rem;
 		#pop-out {
-			// top: 60px;
 		}
 		nav {
-			background: $five;
 			padding: 5rem 0.5rem;
-			color: $text-dark;
+			li {
+				color: $text-dark;
+			}
 		}
 	}
 	li:nth-child(1) {
@@ -104,37 +74,60 @@
 	}
 
 	li:nth-child(5) {
-		background: $five;
-		img {
-			box-shadow: 7-80px 0 0 0 $five;
-		}
-	}
-
-	li:nth-child(6) {
 		background: $one;
 		img {
 			box-shadow: -80px 0 0 0 $one;
 		}
 	}
 
-	li:nth-child(7) {
+	li:nth-child(6) {
 		background: $two;
 		img {
 			box-shadow: -80px 0 0 0 $two;
 		}
 	}
 
-	li:nth-child(8) {
+	li:nth-child(7) {
 		background: $three;
 		img {
 			box-shadow: -80px 0 0 0 $three;
+		}
+	}
+	li:nth-child(8) {
+		background: $four;
+		img {
+			box-shadow: -80px 0 0 0 $four;
 		}
 	}
 
 	li:nth-child(9) {
-		background: $four;
+		background: $one;
 		img {
-			box-shadow: -80px 0 0 0 $four;
+			box-shadow: -80px 0 0 0 $one;
+		}
+	}
+
+	li:nth-child(10) {
+		background: $two;
+		img {
+			box-shadow: -80px 0 0 0 $two;
+		}
+	}
+
+	li:nth-child(11) {
+		background: $three;
+		img {
+			box-shadow: -80px 0 0 0 $three;
+		}
+	}
+	li {
+		border: none;
+		color: $text-light;
+		&.no-background {
+			background: none;
+		}
+		img {
+			transform: translate(40px);
 		}
 	}
 }
