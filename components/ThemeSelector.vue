@@ -5,6 +5,8 @@
 		<button @click="changeTheme('southwest-theme')">Southwest Theme</button>
 
 		<button @click="changeTheme('seventies-theme')">Seventies Theme</button>
+
+		<button @click="changeTheme('sunset-theme')">Sunset Theme</button>
 	</section>
 </template>
 

@@ -4,7 +4,7 @@ import author from "~/static/data.json";
 export const state = () => ({
 	projects: [],
 	author: [],
-	theme: "mightnight-theme",
+	theme: "seventies-theme",
 });
 
 export const mutations = {
