@@ -1,5 +1,5 @@
 .southwest-theme {
-	$primary: #ff7f7f;
+	// $primary: #ff7f7f;
 	// $secondary: #9fffdf;
 	$secondary: #88dddd;
 	// $tertiary: #39aa99;
@@ -17,14 +17,14 @@
 	$text: #202020;
 	$text-dark: #101010;
 	$text-light: #ffffff;
-	background: $primary;
-	background: #f8e0d0;
+	// background: $primary;
+	// background: #f8e0d0;
 	background: #ffffff;
 
 	color: $text;
 
 	button {
-		@include button($tertiary);
+		@include button($three);
 	}
 
 	a {

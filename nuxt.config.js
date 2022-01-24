@@ -37,7 +37,7 @@ export default {
 	components: true,
 
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-	buildModules: ["@nuxtjs/style-resources"],
+	buildModules: ["@nuxtjs/style-resources", "@nuxtjs/google-fonts"],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
@@ -65,5 +65,20 @@ export default {
 			"./assets/vars/*.scss",
 			"./assets/css/_colors.scss", // use underscore "_" & also file extension ".scss"
 		],
+	},
+	googleFonts: {
+		// download: true,
+		families: {
+			"Abril Fatface": true,
+			"Open Sans": [300, 400, 600, 700],
+			"Poiret One": true,
+			"Poller One": true,
+			Monton: true,
+			Comfortaa: [300, 400, 600, 700, 900],
+			Raleway: {
+				wght: [100, 400],
+				ital: [100],
+			},
+		},
 	},
 };

@@ -18,8 +18,17 @@
 	$text-dark: #101010;
 	$text-light: #ffffff;
 
+	font-family: "Comfortaa";
 	background: $background;
 	color: $text;
+
+	h1 {
+		font-weight: 700;
+	}
+	h2,
+	h3 {
+		font-weight: 300;
+	}
 
 	button {
 		@include button($accent);

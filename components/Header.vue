@@ -9,8 +9,12 @@
                 aria-expanded="false"
                 data-toggle="dropdown"
                 @click="showMenu"
+                class="show-menu"
                 :class="isActive ? 'hidden' : 'show'"
-                > -
+                >
+                <span></span>
+                <span></span>
+                <span></span>
                 <!-- -
                     <span aria-hidden="true">&#x25be</span> -->
                 </button>
@@ -18,7 +22,7 @@
                 aria-haspopup="false" 
                 aria-expanded="true"
                 data-toggle="dropdown"
-                @click="showMenu"
+                @click="closeMenu"
                 :class="isActive ? 'show' : 'hidden'"
                 >
                 Close
@@ -34,23 +38,23 @@
         >
             <nav>
                 <ul>
-                     <li>
+                    <li @click="closeMenu">
                         <nuxt-link to="/">
                             home
                         </nuxt-link>
                     </li>
-                    <li>
+                    <li @click="closeMenu">
                         <nuxt-link to="/projects">
                             projects
                         </nuxt-link>
                     </li>
-                    <li>
+                    <li @click="closeMenu">
                         <nuxt-link to="/about">
                             about
                         </nuxt-link>
                     </li>
-                    <li>
-                        <nuxt-link to="/contact">
+                    <li @click="closeMenu">
+                        <nuxt-link to="/contact" >
                             contact
                         </nuxt-link>
                     </li>
@@ -71,26 +75,46 @@ export default {
     methods: {
 
         showMenu(){
-            this.isActive = !this.isActive
+            this.isActive = true
             return  this.isActive
+        },
+        closeMenu(){
+            this.isActive = false
+            return this.isActive
         }
     },
     mounted(){
-        // console.log(this.isActive)
+        // console.log('mounted')
     }
 }
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     header {
         border-bottom: 1px solid;
         margin: 0 1rem;
     }
     button {
         background: none;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 15px;
+        padding: 5px;
+        &.show {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &.show-menu {
+            span {
+                display: block;
+                height: 1px;
+                line-height: 0px;
+                background: #ffffff;
+            }
+
+        }
     }
+    
 </style>

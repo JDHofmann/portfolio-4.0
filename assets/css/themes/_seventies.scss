@@ -11,14 +11,19 @@
 	$text-dark: #101010;
 	$text-light: #ffffff;
 
+	font-family: "Poiret One";
 	background: #ffffff;
 	#menu-bar {
+		font-family: "Poller One";
 		background: $eight;
 		color: $text-light;
 		margin: 0;
 		padding: 0 1rem;
 		#pop-out {
 			// top: 60px;
+			ul li {
+				font-size: 14px;
+			}
 		}
 		nav {
 			background: $eight;
@@ -26,60 +31,93 @@
 			color: $text-dark;
 		}
 	}
-	li:nth-child(1) {
-		background: $one;
-		img {
-			box-shadow: -80px 0 0 0 $one;
+
+	#theme-selector button {
+		font-family: "Poller One";
+		font-size: 10px;
+	}
+	h1 {
+		font-family: "Poller One";
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 17px;
+	}
+	.project-card h2 {
+		font-family: "Poller One";
+	}
+	h3 {
+		font-family: "Poller One";
+	}
+	p {
+		font-size: 15px;
+	}
+
+	@mixin seventiesShadows($primary, $secondary) {
+		background: $primary;
+		.card-link {
+			background: rgba($secondary, 0.5);
 		}
+		img {
+			box-shadow: -60px 0 0 0 $primary;
+		}
+		@media (min-width: 1080px) {
+			img {
+				box-shadow: -80px 0 0 0 $primary;
+			}
+		}
+	}
+
+	li:nth-child(1) {
+		// background: $one;
+		// .card-link {
+		// 	background: rgba($two, 0.5);
+		// }
+		// img {
+		// 	box-shadow: -60px 0 0 0 $one;
+		// }
+		// @media (min-width: 768px) {
+		// 	img {
+		// 		box-shadow: -80px 0 0 0 $one;
+		// 	}
+		// }
+		@include seventiesShadows($one, $two);
 	}
 
 	li:nth-child(2) {
-		background: $two;
-		img {
-			box-shadow: -80px 0 0 0 $two;
-		}
+		// background: $two;
+		// .card-link {
+		// 	background: rgba($three, 0.5);
+		// }
+		// img {
+		// 	box-shadow: -80px 0 0 0 $two;
+		// }
+		@include seventiesShadows($two, $three);
 	}
 
 	li:nth-child(3) {
-		background: $three;
-		img {
-			box-shadow: -80px 0 0 0 $three;
-		}
+		@include seventiesShadows($three, $four);
 	}
 
 	li:nth-child(4) {
-		background: $four;
-		img {
-			box-shadow: -80px 0 0 0 $four;
-		}
+		@include seventiesShadows($four, $five);
 	}
 
 	li:nth-child(5) {
-		background: $five;
-		img {
-			box-shadow: 7-80px 0 0 0 $five;
-		}
+		@include seventiesShadows($five, $six);
 	}
 
 	li:nth-child(6) {
-		background: $six;
-		img {
-			box-shadow: 7-80px 0 0 0 $six;
-		}
+		@include seventiesShadows($six, $seven);
 	}
 
 	li:nth-child(7) {
-		background: $seven;
-		img {
-			box-shadow: -80px 0 0 0 $seven;
-		}
+		@include seventiesShadows($seven, $eight);
+
 		color: $text-light;
 	}
 	li:nth-child(8) {
-		background: $eight;
-		img {
-			box-shadow: -80px 0 0 0 $eight;
-		}
+		@include seventiesShadows($eight, $one);
 		color: $text-light;
 	}
 	li {
@@ -87,7 +125,12 @@
 			background: none;
 		}
 		img {
-			transform: translate(40px);
+			transform: translate(30px);
+		}
+		@media (min-width: 1080px) {
+			img {
+				transform: translate(40px);
+			}
 		}
 	}
 }

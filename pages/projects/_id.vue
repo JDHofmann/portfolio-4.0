@@ -4,6 +4,8 @@
 			<h1>{{ project.name }}</h1>
 			<h2>{{ project.subhead }}</h2>
 		</div>
+		<p class="description">{{ project.description }}</p>
+
 		<section>
 			<h3>Images</h3>
 			<div id="project-images">
@@ -26,7 +28,6 @@
 			:height="project.iframes[0].height"
 		></iframe>
 		<section>
-			<p>{{ project.description }}</p>
 			<ul>
 				<li v-for="(link, i) in project.links" :key="i">
 					<a :href="link.path">{{ link.title }}</a>

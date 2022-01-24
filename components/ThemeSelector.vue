@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section id="theme-selector">
 		<button @click="changeTheme('mightnight-theme')">Midnight Theme</button>
 
 		<button @click="changeTheme('southwest-theme')">Southwest Theme</button>
@@ -21,12 +21,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-section {
-	display: flex;
-	justify-content: space-evenly;
+#theme-selector {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+	column-gap: 0.5rem;
+	row-gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	// breakpoint add columns
+}
+@media (min-width: 617px) {
+	#theme-selector {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 button {
-	// border: 1px solid;
 	padding: 0.5rem 1rem;
+	font-size: 13px;
+	width: clamp(50px, 100%, 200px);
 }
 </style>

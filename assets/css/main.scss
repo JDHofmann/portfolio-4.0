@@ -4,11 +4,6 @@
 
 @import "header";
 
-@import "themes/midnight";
-@import "themes/southwest";
-@import "themes/seventies";
-@import "themes/sunset";
-
 .forest-theme {
 }
 
@@ -39,11 +34,17 @@ img {
 }
 
 .hero {
-	padding-top: 3rem;
+	padding: 3rem 0 0;
 	border-bottom: 1px solid;
+	h1 {
+		width: 50%;
+	}
+	h2 {
+		padding: 0.5rem 0;
+	}
 }
-h1 {
-	width: 50%;
+.description {
+	padding: 1rem 0;
 }
 
 button {
@@ -51,6 +52,9 @@ button {
 	border-radius: 10px;
 	border: none;
 	outline: 1px solid;
+	&hover {
+		outline: 3px solid;
+	}
 }
 
 footer {
@@ -64,3 +68,7 @@ footer {
 	width: 100%; */
 	/* position: fixed; */
 }
+@import "themes/midnight";
+@import "themes/southwest";
+@import "themes/seventies";
+@import "themes/sunset";
