@@ -57,14 +57,24 @@ export default {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	align-items: end;
+	justify-items: center;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
 	width: 100%;
 }
 #project-images div {
-	width: 20%;
+	width: 80%;
 	padding: 1rem 2rem 2rem;
 }
 #project-images img {
 	width: 100%;
 	border: 1px solid;
+}
+h4 {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid;
 }
 </style>
