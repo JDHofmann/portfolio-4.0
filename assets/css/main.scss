@@ -4,7 +4,8 @@
 
 @import "header";
 
-.forest-theme {
+html {
+	font-size: 16px;
 }
 
 body {
@@ -16,11 +17,17 @@ main {
 	min-height: 90vh;
 }
 section {
-	padding-top: 1rem;
+	padding-top: 2rem;
 }
 li {
 	padding-top: 1rem;
 }
+
+.project-page section.links li,
+.contact section.links li {
+	background: none;
+}
+
 img {
 	// box-shadow: 25px 25px 0 #ff00ffc0;
 	margin-top: 1rem;
@@ -49,10 +56,10 @@ img {
 
 button {
 	transition: 0.33s ease;
-	border-radius: 10px;
+	border-radius: 0.65rem;
 	border: none;
 	outline: 1px solid;
-	&hover {
+	&:hover {
 		outline: 3px solid;
 	}
 }
@@ -60,13 +67,10 @@ button {
 footer {
 	border-top: 1px solid;
 	margin: 0 1rem;
-	padding: 10px 0;
-	height: 40px;
-	/* display: flex; */
-	/* align-items: center;
-	height: 60px;
-	width: 100%; */
-	/* position: fixed; */
+	// padding: 0.8rem 0;
+	height: 51px;
+	display: flex;
+	align-items: center;
 }
 @import "themes/midnight";
 @import "themes/southwest";

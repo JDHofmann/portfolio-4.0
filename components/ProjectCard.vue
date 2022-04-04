@@ -33,7 +33,7 @@ export default {
 h2 {
 	text-align: center;
 	padding: 1rem 0;
-	font-size: 14px;
+	font-size: 0.8rem;
 }
 li {
 	list-style: none;
@@ -59,7 +59,7 @@ img {
 
 @media (min-width: 1080px) {
 	h2 {
-		font-size: 17px;
+		font-size: 1.2rem;
 	}
 	li {
 		width: 200px;

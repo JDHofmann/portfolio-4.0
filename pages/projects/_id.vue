@@ -1,16 +1,16 @@
 <template>
-	<main>
+	<main class="project-page">
 		<div class="hero">
 			<h1>{{ project.name }}</h1>
-			<h2>{{ project.subhead }}</h2>
+			<p>{{ project.subhead }}</p>
 		</div>
 		<p class="description">{{ project.description }}</p>
 
 		<section>
-			<h3>Images</h3>
+			<h2>Images</h2>
 			<div id="project-images">
 				<div v-for="(img, i) in project.images" :key="i">
-					<h4>{{ img.title }}</h4>
+					<h3>{{ img.title }}</h3>
 					<img :src="img.path" :alt="img.title" />
 				</div>
 			</div>
@@ -27,7 +27,8 @@
 			:width="project.iframes[0].width"
 			:height="project.iframes[0].height"
 		></iframe>
-		<section>
+		<section class="links">
+			<h2>Links</h2>
 			<ul>
 				<li v-for="(link, i) in project.links" :key="i">
 					<a :href="link.path">{{ link.title }}</a>
@@ -53,6 +54,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.hero {
+	p {
+		font-size: 18px;
+		padding: 0.25rem 0 1rem;
+	}
+}
 #project-images {
 	display: flex;
 	justify-content: space-evenly;
@@ -73,7 +80,7 @@ export default {
 	width: 100%;
 	border: 1px solid;
 }
-h4 {
+h3 {
 	padding: 0.5rem 0;
 	border-bottom: 1px solid;
 }

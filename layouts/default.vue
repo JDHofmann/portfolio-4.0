@@ -3,7 +3,9 @@
 		<Header />
 		<ThemeSelector />
 		<Nuxt />
-		<footer>Footer</footer>
+		<footer>
+			<p>built by jd brewer-hofmann 2022</p>
+		</footer>
 	</div>
 </template>
 

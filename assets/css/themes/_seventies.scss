@@ -13,6 +13,7 @@
 
 	font-family: "Poiret One";
 	background: #ffffff;
+
 	#menu-bar {
 		font-family: "Poller One";
 		background: $eight;
@@ -43,14 +44,16 @@
 	h2 {
 		font-size: 17px;
 	}
-	.project-card h2 {
+
+	.project-card h2,
+	.project-page h2 {
 		font-family: "Poller One";
 	}
 	h3 {
-		font-family: "Poller One";
+		// font-family: "Poller One";
 	}
 	p {
-		font-size: 15px;
+		font-size: 1rem;
 	}
 
 	@mixin seventiesShadows($primary, $secondary) {
@@ -90,16 +93,32 @@
 		@include seventiesShadows($three, $four);
 	}
 
+	#project-images div:nth-child(3) img {
+		@include projectImages($three);
+	}
+
 	li:nth-child(4) {
 		@include seventiesShadows($four, $five);
+	}
+
+	#project-images div:nth-child(4) img {
+		@include projectImages($four);
 	}
 
 	li:nth-child(5) {
 		@include seventiesShadows($five, $six);
 	}
 
+	#project-images div:nth-child(5) img {
+		@include projectImages($five);
+	}
+
 	li:nth-child(6) {
 		@include seventiesShadows($six, $seven);
+	}
+
+	#project-images div:nth-child(6) img {
+		@include projectImages($six);
 	}
 
 	li:nth-child(7) {
@@ -107,10 +126,20 @@
 
 		color: $text-light;
 	}
+
+	#project-images div:nth-child(7) img {
+		@include projectImages($seven);
+	}
+
 	li:nth-child(8) {
 		@include seventiesShadows($eight, $one);
 		color: $text-light;
 	}
+
+	#project-images div:nth-child(8) img {
+		@include projectImages($eight);
+	}
+
 	li {
 		&.no-background {
 			background: none;

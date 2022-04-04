@@ -1,13 +1,13 @@
 <template>
-	<main>
+	<main class="contact">
 		<div class="hero">
 			<h1>Contact</h1>
 		</div>
-		<section>
+		<section class="links">
 			<a :href="`mailto:${email}`">Email</a>
-			<ul v-for="(link, i) in links" :key="i">
-				<li>{{ link.name }}</li>
-			</ul>
+			<a v-for="(link, i) in links" :key="i" :href="link.url">{{
+				link.name
+			}}</a>
 		</section>
 	</main>
 </template>
@@ -30,3 +30,10 @@ export default {
 	},
 };
 </script>
+<style scoped>
+.links a {
+	display: block;
+	padding: 1rem 0;
+	font-size: 1.2rem;
+}
+</style>

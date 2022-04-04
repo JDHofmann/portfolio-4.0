@@ -1,6 +1,6 @@
 <template>
 	<section id="theme-selector">
-		<button @click="changeTheme('mightnight-theme')">Midnight Theme</button>
+		<!-- <button @click="changeTheme('mightnight-theme')">Midnight Theme</button> -->
 
 		<button @click="changeTheme('southwest-theme')">Southwest Theme</button>
 
@@ -23,10 +23,14 @@ export default {
 <style scoped lang="scss">
 #theme-selector {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 0.5rem;
+	justify-content: space-around;
+	// grid-template-columns: repeat(2, 1fr);
 	place-items: center;
-	column-gap: 0.5rem;
-	row-gap: 0.75rem;
+	// column-gap: 0.5rem;
+	// row-gap: 0.75rem;
 	padding: 0.75rem 1rem;
 	// breakpoint add columns
 }
@@ -37,7 +41,7 @@ export default {
 }
 button {
 	padding: 0.5rem 1rem;
-	font-size: 13px;
+	font-size: 0.85rem;
 	width: clamp(50px, 100%, 200px);
 }
 </style>

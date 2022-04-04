@@ -1,8 +1,8 @@
 .sunset-theme {
-	$primary: #202040;
-	$secondary: #2020c0;
-	$tertiary: #602040;
-	$accent: #d2e4f0;
+	// $primary: #202040;
+	// $secondary: #2020c0;
+	// $tertiary: #602040;
+	// $accent: #d2e4f0;
 	// $text: #ffffff;
 
 	$background: #081d41;
@@ -16,7 +16,7 @@
 	$six: #1f3684;
 
 	$text-dark: #101010;
-	$text-light: #ffffff;
+	$text-light: #d2e4f0;
 
 	font-family: "Comfortaa";
 	background: $background;
@@ -24,18 +24,26 @@
 
 	h1 {
 		font-weight: 700;
+		font-size: 1.75rem;
 	}
 	h2,
 	h3 {
 		font-weight: 300;
 	}
+	.project-page {
+		h2 {
+			font-weight: 700;
+			font-size: 1.4rem;
+			border-bottom: 1px solid $three;
+		}
+	}
 
 	button {
-		@include button($accent);
+		@include button($text-light);
 	}
 
 	a {
-		@include link($accent);
+		@include link($text-light);
 	}
 	img {
 		box-shadow: 15px 15px 0 $three;
@@ -54,11 +62,19 @@
 			}
 		}
 	}
+
+	@mixin projectImages($primary) {
+		box-shadow: 20px 20px 0 0 $primary;
+	}
+
 	li:nth-child(1) {
 		background: $one;
 		img {
 			box-shadow: -80px 0 0 0 $one;
 		}
+	}
+	#project-images div:nth-child(1) img {
+		@include projectImages($one);
 	}
 
 	li:nth-child(2) {
@@ -68,11 +84,19 @@
 		}
 	}
 
+	#project-images div:nth-child(2) img {
+		@include projectImages($two);
+	}
+
 	li:nth-child(3) {
 		background: $three;
 		img {
 			box-shadow: -80px 0 0 0 $three;
 		}
+	}
+
+	#project-images div:nth-child(3) img {
+		@include projectImages($three);
 	}
 
 	li:nth-child(4) {
@@ -82,11 +106,19 @@
 		}
 	}
 
+	#project-images div:nth-child(4) img {
+		@include projectImages($four);
+	}
+
 	li:nth-child(5) {
 		background: $one;
 		img {
 			box-shadow: -80px 0 0 0 $one;
 		}
+	}
+
+	#project-images div:nth-child(5) img {
+		@include projectImages($one);
 	}
 
 	li:nth-child(6) {
@@ -96,17 +128,30 @@
 		}
 	}
 
+	#project-images div:nth-child(6) img {
+		@include projectImages($two);
+	}
+
 	li:nth-child(7) {
 		background: $three;
 		img {
 			box-shadow: -80px 0 0 0 $three;
 		}
 	}
+
+	#project-images div:nth-child(7) img {
+		@include projectImages($three);
+	}
+
 	li:nth-child(8) {
 		background: $four;
 		img {
 			box-shadow: -80px 0 0 0 $four;
 		}
+	}
+
+	#project-images div:nth-child(8) img {
+		@include projectImages($four);
 	}
 
 	li:nth-child(9) {
