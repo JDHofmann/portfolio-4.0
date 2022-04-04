@@ -66,11 +66,30 @@
 	},
 	{
 		"id": 4,
-		"name": "Payout Perk Dispay Ads",
-		"thumbnail": "/payout-perk/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250.jpg",
+		"name": "Progressive Animated Display Ads",
+		"thumbnail": "/display-ads/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250.jpg",
 		"iframes": [
 			{
-				"path": "/payout-perk/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250/index.html",
+				"title": "Flo Balloons",
+				"path": "/display-ads/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250/index.html",
+				"width": 300,
+				"height": 250
+			},
+			{
+				"title": "Smart Haul",
+				"path": "/display-ads/21B40344_TruckPaidDigital_DA_SmartHaul2-300x250/index.html",
+				"width": 300,
+				"height": 250
+			},
+			{
+				"title": "Motorcyle Horizon",
+				"path": "/display-ads/21S80144_SLDigital_DA_MCHorizon-300x600/21S80144_SLDigital_DA_MCHorizon-300x600/index.html",
+				"width": 300,
+				"height": 600
+			},
+			{
+				"title": "Snapshot Proview",
+				"path": "/display-ads/21B40345_BACONPaidDigital_DA_SnapshotProview-300x250/index.html",
 				"width": 300,
 				"height": 250
 			}
