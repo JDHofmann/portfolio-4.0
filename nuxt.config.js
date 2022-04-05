@@ -7,7 +7,7 @@ export default {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: "portfolio-4.0",
+		title: "JD Brewer-Hofmann || Freelance Web Developer",
 		htmlAttrs: {
 			lang: "en",
 		},
@@ -17,10 +17,17 @@ export default {
 				name: "viewport",
 				content: "width=device-width, initial-scale=1",
 			},
-			{ hid: "description", name: "description", content: "" },
+			{
+				hid: "description",
+				name: "description",
+				content:
+					"Web developer and musician. Since graduating Flatiron School's software engineering programming I have been working for ninety6 - Progressive's in-house creative agency. I enjoy building visually striking websites that keep accessibility in mind.",
+			},
 			{ name: "format-detection", content: "telephone=no" },
 		],
-		link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+		link: [
+			{ rel: "icon", type: "image/x-icon", href: "/Favicon-2022.png" },
+		],
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
@@ -54,7 +61,7 @@ export default {
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {},
-	mode: "universal",
+	// mode: "universal",
 	image: {
 		cloudinary: {
 			baseURL: "https://res.cloudinary.com/nuxt/image/upload/",
