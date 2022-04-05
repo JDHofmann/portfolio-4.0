@@ -119,6 +119,7 @@ export default {
 					span {
 						display: block;
 						height: 1px;
+						width: 100%;
 						line-height: 0px;
 						background: #ffffff;
 					}
