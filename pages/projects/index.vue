@@ -10,6 +10,7 @@
 					:key="project.id"
 					:id="project.id"
 					:name="project.name"
+					:thumbnail="project.thumbnail"
 				/>
 			</ul>
 		</section>
