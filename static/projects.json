@@ -2,8 +2,8 @@
 	{
 		"id": 0,
 		"name": "North Park Transportation",
-		"subhead": "subhead text",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"subhead": "Independent LTL company in the Rocky Mountain region",
+		"description": "North Park Transportation requested a full site rebuild to coincide with a re-brand. North Park provided a large amount of new content with a flexible vision for the site. The site would replace their exsiting site, while maintaining their existing scheduling and quote system. In under two months I worked directly with the company leaders to launch a brand new site. Nopk.com is built with NextJS, Tailwind, HTML, with a Netlify CMS",
 		"thumbnail": "/nopk/thumbnail.jpg",
 		"images": [
 			{
@@ -39,7 +39,7 @@
 		"id": 1,
 		"name": "Display Ads Hub",
 		"subhead": "Internal Progressive Site",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"description": "Progressive's marketing department is responsible for a large number of display ads, released continuously throughout the year. With a comprehensive cross departmental review process, and an extensive backlog of content, I developed an internal site to store and present ads both while in development and after they ship to vendors. The site allows our clients to view all the requested sizes animated simultaneously, as well as reference material and project links. The site is written with NuxtJs, SASS,and HTML, and hosted and released through Azure Dev Ops.",
 		"thumbnail": "/display-hub/business-area.jpg",
 		"images": [
 			{
@@ -58,16 +58,84 @@
 	},
 	{
 		"id": 2,
-		"name": "Inclusity"
+		"name": "Inclusity",
+		"subhead": "Customized inclusion and diversity training",
+		"description": "I initially was contracted by Inclusity to make a series of accessibility updates. Since then, we have expanded the scope of the contract to a site redesign. With a large amount of pages, content, and a limited budget, we partnered to update the site on an extended time table. Design updates are made periodically to slowly shift towards the newly established brand guildlines, while the wordpress back office is maximized for organizational effectiveness. I developed a system of page templates that utilize the existing color scheme to give a consistent and professional feel throughout the site while adding sprinkles of color.",
+		"thumbnail": "/inclusity/clients.png",
+		"images": [
+			{
+				"title": "inclusity.com",
+				"path": "/inclusity/landing-page.png"
+			},
+			{
+				"title": "About Page",
+				"path": "/inclusity/about.png"
+			},
+			{
+				"title": "Our Clients Page",
+				"path": "/inclusity/clients.png"
+			},
+			{
+				"title": "Inclusion Training Workshop page",
+				"path": "/inclusity/training.png"
+			}
+		],
+		"links": [
+			{
+				"title": "inclusity.com",
+				"path": "https://www.inclusity.com/"
+			},
+			{
+				"title": "Example page template",
+				"path": "https://www.inclusity.com/about/"
+			},
+			{
+				"title": "Example inclusion training subpage template",
+				"path": "https://www.inclusity.com/inclusion-training/lgbtq-diversity-training/"
+			}
+		]
 	},
 	{
 		"id": 3,
-		"name": "Life@Progressive"
+		"name": "Life@Progressive",
+		"subhead": "Progressive's blog about working with the company",
+		"description": "Life@Progressive is an ongoing blog written by Progressive employs detailing their experiences getting and working at Progressive. The blog updates quarterly adding 12-15 new articles, while updating exsiting articles, and making periodic enhancements to the UI and design. Life@Progressive is part of the greater Progressive.com codebase written in C#/Razor.",
+		"thumbnail": "/life/article.png",
+		"images": [
+			{
+				"title": "Landing Page",
+				"path": "/life/landing.png"
+			},
+			{
+				"title": "Sub Category of Articles ",
+				"path": "/life/list.png"
+			},
+			{
+				"title": "Article Page",
+				"path": "/life/article.png"
+			},
+			{
+				"title": "List of Articles",
+				"path": "/life/landing-page-2.png"
+			}
+		],
+		"links": [
+			{
+				"title": "Life@Progressive",
+				"path": "https://www.progressive.com/careers/life/"
+			},
+			{
+				"title": "Example Article from blog",
+				"path": "https://www.progressive.com/careers/life/leading-from-the-heart/"
+			}
+		]
 	},
 	{
 		"id": 4,
 		"name": "Progressive Animated Display Ads",
-		"thumbnail": "/display-ads/21D30085_Multichannel_DA_Flo-Balloons-300x250/21D30085_Multichannel_DA_Flo-Balloons-300x250.jpg",
+		"subhead": "Animated internet ads to market Progressive Insurance",
+		"thumbnail": "/display-ads/21S80144_SLDigital_DA_MCHorizon-300x250.jpg",
+		"description": "Progressive's marketing department is responsible for a large number of display ads, released continuously throughout the year. Display ads are released as part of larger marketing campaigns, delivered in a variety of sizes, and are required to be extremely small in file size. Because of the limited file size, animated ads are written essentially to replicate gifs or videos - which would be too large to meet the strict guidelines. These ads present a unique and fun challenge in writing minimal code that work on 99% of devices used worldwide. Display ads are written in Javascript, CSS, and HTML.",
 		"iframes": [
 			{
 				"title": "Flo Balloons",
@@ -118,9 +186,9 @@
 	},
 	{
 		"id": 6,
-		"name": "Corporate Responsibility",
-		"subhead": "Progressive...",
-		"description": "words... words... words... descriptive words....",
+		"name": "Progressive's Corporate Responsibility",
+		"subhead": "Progressive's dedicated page outlining their dedication to improving social and environmental outcomes",
+		"description": "Progressive's corporate responsibility page updates yearly adding, updating, and removing pages and content. The desigin is consistently updated to match the brand standards of Progressive.com and Progressive's larger properties. As with Life@Progressive, the Corporate Responsibility page and subpages are part of the greater Progressive.com codebase written in C#/Razor.",
 		"thumbnail": "/corporate-responsibility/thumbnail.jpg",
 		"images": [
 			{
@@ -142,7 +210,7 @@
 		],
 		"links": [
 			{
-				"title": "landing page",
+				"title": "Corporate Responsibility landing page",
 				"path": "https://www.progressive.com/about/corporate-responsibility/"
 			}
 		]

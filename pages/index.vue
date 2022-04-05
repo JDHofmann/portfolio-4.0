@@ -4,6 +4,10 @@
 			<h1>Home</h1>
 		</div>
 		<section>
+			<p>{{ author[0].biographyShort }}</p>
+		</section>
+		<section>
+			<h2>Projects</h2>
 			<ul>
 				<ProjectCard
 					v-for="project in projects"
@@ -23,7 +27,7 @@ import { mapState, mapActions } from "vuex";
 export default {
 	name: "IndexPage",
 	computed: {
-		...mapState(["projects", "theme"]),
+		...mapState(["projects", "theme", "author"]),
 	},
 	methods: {
 		...mapActions(["changeTheme"]),
@@ -37,6 +41,9 @@ export default {
 <style scoped>
 button {
 	border: 5px solid #ffffff;
+}
+h2 {
+	font-weight: 700;
 }
 ul {
 	padding-top: 1rem;

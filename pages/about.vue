@@ -26,3 +26,9 @@ export default {
 	},
 };
 </script>
+<style scoped>
+img {
+	width: 80%;
+	margin: 2rem 10%;
+}
+</style>

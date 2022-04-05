@@ -69,16 +69,18 @@ export default {
 	googleFonts: {
 		// download: true,
 		families: {
-			"Abril Fatface": true,
+			// "Abril Fatface": true,
 			"Open Sans": [300, 400, 600, 700],
+			Chivo: [300, 400, 700],
 			"Poiret One": true,
 			"Poller One": true,
-			Monton: true,
+			// Monton: true,
 			Comfortaa: [300, 400, 600, 700, 900],
-			Raleway: {
-				wght: [100, 400],
-				ital: [100],
-			},
+			// Raleway: {
+			// 	wght: [100, 400],
+			// 	ital: [100],
+			// },
+			"Yeseva One": true,
 		},
 	},
 };

@@ -23,19 +23,33 @@
 
 	color: $text;
 
+	font-family: "Chivo";
+
 	button {
 		@include button($three);
 	}
 
 	a {
-		@include link($one);
+		@include link($six);
+	}
+
+	#logo {
+		font-family: "Yeseva One";
+		font-size: 1.2rem;
 	}
 
 	h1 {
 		font-size: 1.5rem;
+		font-family: "Yeseva One";
 	}
+
 	h2 {
 	}
+
+	p {
+		font-weight: 300;
+	}
+
 	.project-page h2 {
 		font-size: 1.2rem;
 	}
@@ -96,7 +110,9 @@
 		margin: 0;
 		padding: 0 1rem;
 		#pop-out {
-			// top: 60px;
+			a:hover {
+				color: #ffffff;
+			}
 		}
 		nav {
 			background: $eight;
