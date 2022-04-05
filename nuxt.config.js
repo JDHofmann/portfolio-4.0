@@ -67,7 +67,7 @@ export default {
 		],
 	},
 	googleFonts: {
-		// download: true,
+		download: true,
 		families: {
 			// "Abril Fatface": true,
 			"Open Sans": [300, 400, 600, 700],

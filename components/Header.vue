@@ -200,6 +200,7 @@ export default {
 					justify-content: flex-end;
 					align-items: center;
 					height: 40px;
+					padding-right: 5vw;
 					li {
 						margin: 0 0 0 1rem;
 						border-radius: 10px;
