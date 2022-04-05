@@ -2,7 +2,10 @@
 @import "colors";
 @import "mixins";
 
-@import "header";
+// @import "header";
+
+$min-x-padding: 5vw;
+$max-content-width: 1280px;
 
 html {
 	font-size: 16px;
@@ -11,48 +14,30 @@ html {
 body {
 	background: #000000;
 }
+
+.content-wrapper {
+	max-width: $max-content-width;
+	margin: auto;
+	padding: 0 $min-x-padding;
+}
+
+#menu-bar #static-items {
+	// border-bottom: 1px solid;
+	// margin: 0 1rem;
+	padding: 0 $min-x-padding;
+}
+
 main {
 	z-index: 1;
-	padding: 0 1rem 10rem;
+	padding-bottom: 10rem !important;
 	min-height: 90vh;
 }
 section {
-	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
+
 li {
 	padding-top: 1rem;
-}
-
-.project-page section.links li,
-.contact section.links li {
-	background: none;
-}
-
-img,
-iframe {
-	// box-shadow: 25px 25px 0 #ff00ffc0;
-	margin-top: 1rem;
-}
-
-.hidden {
-	display: none;
-}
-.show {
-	display: block;
-}
-
-.hero {
-	padding: 3rem 0 0;
-	border-bottom: 1px solid;
-	h1 {
-		width: 50%;
-	}
-	h2 {
-		padding: 0.5rem 0;
-	}
-}
-.description {
-	padding: 1rem 0;
 }
 
 button {
@@ -68,12 +53,44 @@ button {
 footer {
 	border-top: 1px solid;
 	margin: 0 1rem;
-	// padding: 0.8rem 0;
 	height: 51px;
 	display: flex;
 	align-items: center;
 }
-@import "themes/midnight";
+
+img,
+iframe {
+	margin-top: 1rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+.hidden {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+main .hero {
+	padding: 3rem 0 0;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid;
+	h1 {
+		width: 66%;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 1.2rem;
+		padding: 0.25rem 0 1rem;
+	}
+}
+
+// @import "themes/midnight";
 @import "themes/southwest";
 @import "themes/seventies";
 @import "themes/sunset";

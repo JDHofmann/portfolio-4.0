@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="content-wrapper">
 		<div class="hero">
 			<h1>Projects</h1>
 		</div>
@@ -25,9 +25,7 @@ export default {
 	computed: {
 		...mapState(["projects"]),
 	},
-	mounted() {
-		// console.log("anything", this.projects);
-	},
+	mounted() {},
 };
 </script>
 <style scoped>

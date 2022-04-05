@@ -1,5 +1,5 @@
 <template>
-	<main class="contact">
+	<main class="contact content-wrapper">
 		<div class="hero">
 			<h1>Contact</h1>
 		</div>
@@ -23,11 +23,7 @@ export default {
 		}),
 	},
 
-	mounted() {
-		// console.log(this.email);
-		// this.email = this.author[0].email;
-		// this.links = this.author[0].links;
-	},
+	mounted() {},
 };
 </script>
 <style scoped>

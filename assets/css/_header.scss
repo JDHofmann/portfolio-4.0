@@ -1,91 +1,79 @@
 #menu-bar {
-	/* width: 100%; */
 	nav {
 		padding: 10rem 0.5rem;
+	}
+	#logo {
+		font-size: 1.2rem;
+	}
+
+	#static-items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		#menu-buttons {
+			padding: 0.5rem 0;
+			height: 35px;
+		}
+	}
+	#pop-out {
+		width: 100%;
+		z-index: 50;
+		position: absolute;
+		left: 0;
+		top: 51px;
+		background: inherit;
+		transition: 1s ease;
+
+		nav ul li {
+			margin: 1rem 0.5rem;
+			text-align: center;
+			padding: 0;
+			border-radius: 10px;
+
+			a {
+				padding: 0.75rem 1rem;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+			}
+		}
+		&.hidden {
+			display: block;
+			top: -100%;
+		}
 	}
 }
 
 @media (min-width: 768px) {
 	#menu-bar {
 		display: flex;
-	}
-}
 
-#menu-bar #logo {
-}
+		#static-items {
+			width: 50%;
 
-#menu-bar #static-items {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-#menu-bar #static-items #menu-buttons {
-	padding: 0.5rem 0;
-	height: 35px;
-}
-
-@media (min-width: 768px) {
-	#menu-bar #static-items {
-		width: 50%;
-	}
-	#menu-bar #static-items #menu-buttons {
-		display: none;
-	}
-}
-
-#menu-bar #pop-out {
-	width: 100%;
-	z-index: 50;
-	position: absolute;
-	left: 0;
-	top: 51px;
-	background: inherit;
-	transition: 1s ease;
-
-	nav ul li {
-		margin: 1rem 0.5rem;
-		text-align: center;
-		padding: 0;
-		border-radius: 10px;
-
-		a {
-			padding: 0.75rem 1rem;
+			#menu-buttons {
+				display: none;
+			}
+		}
+		#pop-out {
 			display: block;
-			width: 100%;
-			height: 100%;
-			border-radius: 10px;
+			padding: 10px 0;
+			position: relative;
+			top: 0;
+			nav {
+				padding: 0;
+				ul {
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					height: 40px;
+					li {
+						margin: 0 0 0 1rem;
+						border-radius: 10px;
+					}
+				}
+			}
 		}
 	}
-}
-
-@media (min-width: 768px) {
-	#menu-bar #pop-out {
-		display: block;
-		padding: 10px 0;
-		position: relative;
-		top: 0;
-	}
-	#menu-bar #pop-out nav {
-		padding: 0;
-	}
-	#menu-bar #pop-out nav ul {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		height: 40px;
-	}
-	#menu-bar #pop-out nav ul li {
-		margin: 0 0 0 1rem;
-		border-radius: 10px;
-	}
-}
-#pop-out {
-}
-#pop-out.show {
-	// outline: 1px solid #ff00ff;
-}
-#menu-bar #pop-out.hidden {
-	display: block;
-	top: -100%;
 }

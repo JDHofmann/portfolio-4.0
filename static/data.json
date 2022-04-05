@@ -1,7 +1,7 @@
 [
 	{
-		"biography": "Cras id consequat augue, non malesuada diam. Sed vitae ipsum ante. Cras efficitur non tellus eget pharetra. Donec sem ligula, eleifend id pellentesque tristique, tincidunt ac dolor. Sed elementum purus mi, eu volutpat tortor luctus non. Donec nisl odio, consequat sed neque ultrices, aliquam consectetur est. Donec blandit vehicula mi, ut dapibus nisi pellentesque ac. Praesent sed mattis tellus. Donec porttitor ipsum eu ante mattis sodales. Cras arcu metus, vehicula non enim vel, condimentum gravida ipsum. Suspendisse augue nisl, finibus a tristique ac, congue vel urna. Sed ac vehicula sem. Quisque aliquam tempus mauris, non tristique dui porttitor bibendum. ",
-		"biographyShort": "I am web developer, UX/UI developer, musician, and graduate of Flatiron School's software engineering program. I enjoy building inclusive systems and filling my apartment with plants.",
+		"biography": "I am web developer and musician. Since graduating Flatiron School's software engineering programming I have been working for ninety6 - Progressive's in-house creative agency. I enjoy building visually striking websites that keep accessibility in mind. ",
+		"biographyShort": "JD Brewer-Hofmann - Freelance Web Developer",
 		"photo": {
 			"url": "/bio-pic.png",
 			"alt": "jungle"
@@ -9,12 +9,20 @@
 		"email": "jdbrewerhofmann@gmail.com",
 		"links": [
 			{
+				"name": "github",
+				"url": "https://github.com/JDHofmann"
+			},
+			{
 				"name": "blog",
 				"url": "https://dev.to/jdbrewerhofmann"
 			},
 			{
 				"name": "linkedin",
-				"url": "https://dev.to/jdbrewerhofmann"
+				"url": "https://www.linkedin.com/in/jdhofmann/"
+			},
+			{
+				"name": "ninety6",
+				"url": "https://www.weareninety6.com/"
 			}
 		]
 	}

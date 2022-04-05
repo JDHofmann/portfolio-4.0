@@ -30,10 +30,21 @@
 	h3 {
 		font-weight: 300;
 	}
+
+	// .theme-selector {
+	// 	background: $three;
+	// 	button {
+	// 		color: $text-light;
+	// 		background: $six;
+	// 		outline: 0px solid;
+	// 		&:hover {
+	// 			outline: 3px solid;
+	// 		}
+	// 	}
+	// }
+
 	.project-page {
 		h2 {
-			font-weight: 700;
-			font-size: 1.4rem;
 			border-bottom: 1px solid $three;
 		}
 	}
@@ -51,8 +62,6 @@
 
 	#menu-bar {
 		background: $six;
-		margin: 0;
-		padding: 0 1rem;
 		#pop-out {
 		}
 		nav {

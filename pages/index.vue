@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="content-wrapper">
 		<div class="hero">
 			<h1>Home</h1>
 		</div>
@@ -33,7 +33,7 @@ export default {
 		...mapActions(["changeTheme"]),
 	},
 	mounted() {
-		console.log(this.projects);
+		// console.log(this.projects);
 	},
 };
 </script>

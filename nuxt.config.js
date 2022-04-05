@@ -76,10 +76,10 @@ export default {
 			"Poller One": true,
 			// Monton: true,
 			Comfortaa: [300, 400, 600, 700, 900],
-			// Raleway: {
-			// 	wght: [100, 400],
-			// 	ital: [100],
-			// },
+			Raleway: {
+				wght: [100, 400],
+				ital: [100],
+			},
 			"Yeseva One": true,
 		},
 	},

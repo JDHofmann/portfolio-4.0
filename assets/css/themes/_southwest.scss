@@ -23,7 +23,8 @@
 
 	color: $text;
 
-	font-family: "Chivo";
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 
 	button {
 		@include button($three);
@@ -33,25 +34,14 @@
 		@include link($six);
 	}
 
+	h1,
+	h3,
 	#logo {
-		font-family: "Yeseva One";
-		font-size: 1.2rem;
-	}
-
-	h1 {
-		font-size: 1.5rem;
-		font-family: "Yeseva One";
-	}
-
-	h2 {
+		font-family: "Chivo";
 	}
 
 	p {
 		font-weight: 300;
-	}
-
-	.project-page h2 {
-		font-size: 1.2rem;
 	}
 
 	li:nth-child(1) {
@@ -107,8 +97,6 @@
 	#menu-bar {
 		background: $eight;
 		color: $text-light;
-		margin: 0;
-		padding: 0 1rem;
 		#pop-out {
 			a:hover {
 				color: #ffffff;
@@ -116,7 +104,6 @@
 		}
 		nav {
 			background: $eight;
-			// padding: 5rem 0.5rem;
 			color: $text-dark;
 		}
 	}

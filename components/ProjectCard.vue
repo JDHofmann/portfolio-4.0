@@ -3,7 +3,7 @@
 		<NuxtLink :to="`/projects/${id}`" class="card-link">
 			<div class=""></div>
 			<img :src="thumbnail" alt="" />
-			<h2>{{ name }}</h2>
+			<h3>{{ name }}</h3>
 		</NuxtLink>
 	</li>
 </template>
@@ -30,10 +30,10 @@ export default {
 };
 </script>
 <style scoped>
-h2 {
+h3 {
 	text-align: center;
 	padding: 1rem 0;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 li {
 	list-style: none;

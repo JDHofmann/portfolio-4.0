@@ -1,5 +1,5 @@
 <template>
-	<main class="project-page">
+	<main class="project-page content-wrapper">
 		<div class="hero">
 			<h1>{{ project.name }}</h1>
 			<p>{{ project.subhead }}</p>
@@ -7,7 +7,7 @@
 		<p class="description">{{ project.description }}</p>
 
 		<section v-if="!project.iframes">
-			<h2>Images</h2>
+			<!-- <h2>Images</h2> -->
 			<div id="project-images" class="images">
 				<div v-for="(img, i) in project.images" :key="i">
 					<h3>{{ img.title }}</h3>
@@ -16,7 +16,7 @@
 			</div>
 		</section>
 		<section v-if="project.iframes">
-			<h2>Animated Ads</h2>
+			<!-- <h2>Animated Ads</h2> -->
 			<div id="project-images">
 				<div v-for="(iframe, i) in project.iframes" :key="i">
 					<h3>{{ iframe.title }}</h3>
@@ -56,24 +56,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.hero {
-	p {
-		font-size: 18px;
-		padding: 0.25rem 0 1rem;
-	}
+section.links li {
+	background: none;
 }
-// #project-images {
-// 	display: flex;
-// 	justify-content: space-evenly;
-// 	flex-wrap: wrap;
-// 	display: grid;
-// 	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-// 	// align-items: end;
-// 	justify-items: center;
-// 	grid-column-gap: 1rem;
-// 	grid-row-gap: 1rem;
-// 	width: 100%;
-// }
 #project-iframes,
 #project-images {
 	display: flex;
@@ -95,8 +80,12 @@ export default {
 iframe {
 	background: #ffffff;
 }
+h2,
 h3 {
-	padding: 0.5rem 0;
+	padding-bottom: 0.5rem;
 	border-bottom: 1px solid;
+}
+.description {
+	padding-bottom: 1rem;
 }
 </style>

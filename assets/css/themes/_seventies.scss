@@ -11,50 +11,45 @@
 	$text-dark: #101010;
 	$text-light: #ffffff;
 
-	font-family: "Poiret One";
+	font-family: "Raleway";
 	background: #ffffff;
 
 	#menu-bar {
 		font-family: "Poller One";
 		background: $eight;
 		color: $text-light;
-		margin: 0;
-		padding: 0 1rem;
+
 		#pop-out {
-			// top: 60px;
 			ul li {
 				font-size: 14px;
 			}
 		}
 		nav {
 			background: $eight;
-			// padding: 5rem 0.5rem;
 			color: $text-dark;
 		}
 	}
 
-	#theme-selector button {
+	// .theme-selector {
+	// 	button {
+	// 		color: $text-dark;
+	// 		background: rgba($three, 0.5);
+	// 		// background: $one;
+	// 		// font-weight: 700;
+	// 		outline: 1px solid;
+	// 		&:hover {
+	// 			outline: 3px solid;
+	// 		}
+	// 	}
+	// }
+	h1,
+	h3 {
 		font-family: "Poller One";
-		font-size: 10px;
-	}
-	h1 {
-		font-family: "Poller One";
-		font-size: 20px;
-	}
-	h2 {
-		font-size: 17px;
+		// font-size: 1.5rem;
 	}
 
-	.project-card h2,
-	.project-page h2 {
-		font-family: "Poller One";
-	}
-	h3 {
-		// font-family: "Poller One";
-	}
 	p {
 		font-size: 1rem;
-		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 400;
 		color: #303030;
 	}

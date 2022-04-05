@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="content-wrapper">
 		<div class="hero">
 			<h1>About</h1>
 		</div>
@@ -21,9 +21,7 @@ export default {
 		}),
 	},
 
-	mounted() {
-		// console.log(this.photo);
-	},
+	mounted() {},
 };
 </script>
 <style scoped>

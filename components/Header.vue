@@ -14,8 +14,6 @@
 					<span></span>
 					<span></span>
 					<span></span>
-					<!-- -
-                    <span aria-hidden="true">&#x25be</span> -->
 				</button>
 				<button
 					aria-haspopup="false"
@@ -25,8 +23,6 @@
 					class="hide-menu"
 					:class="isActive ? 'show' : 'hidden'"
 				>
-					<!-- Close -->
-					<!-- <span aria-hidden="true">&#x25be</span> -->
 					<span></span>
 					<span></span>
 				</button>
@@ -83,50 +79,133 @@ export default {
 </script>
 
 <style scoped lang="scss">
-header {
-	border-bottom: 1px solid;
-	margin: 0 1rem;
-}
-button {
-	background: none;
-	width: 35px;
-	height: 35px;
-	// font-size: 15px;
-	font-size: 1rem;
-	// padding: 5px;
-	padding: 0.4rem;
-	&.show {
+// header {
+// 	// border-bottom: 1px solid;
+// 	// margin: 0 1rem;
+// 	margin: 0 $min-x-padding;
+// }
+#menu-bar {
+	nav {
+		padding: 10rem 0.5rem;
+	}
+	#logo {
+		font-size: 1.2rem;
+	}
+
+	#static-items {
+		background: inherit;
+		position: relative;
+		z-index: 51;
+		// padding: 0 1rem;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	&.show-menu {
-		span {
-			display: block;
-			height: 1px;
-			line-height: 0px;
-			background: #ffffff;
+		justify-content: space-between;
+		align-items: center;
+		#menu-buttons {
+			padding: 0.5rem 0;
+			height: 35px;
+
+			button {
+				background: none;
+				width: 35px;
+				height: 35px;
+				font-size: 1rem;
+				padding: 0.4rem;
+				&.show {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+				}
+				&.show-menu {
+					span {
+						display: block;
+						height: 1px;
+						line-height: 0px;
+						background: #ffffff;
+					}
+				}
+				&.hide-menu {
+					&.show {
+						display: block;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+					}
+					span {
+						display: block;
+						height: 1px;
+						line-height: 0px;
+						width: 100%;
+						background: #ffffff;
+					}
+					span:nth-child(1) {
+						transform: rotate(45deg);
+					}
+					span:nth-child(2) {
+						transform: rotate(-45deg);
+					}
+				}
+			}
 		}
 	}
-	&.hide-menu {
-		&.show {
+	#pop-out {
+		width: 100%;
+		z-index: 50;
+		position: absolute;
+		left: 0;
+		top: 51px;
+		background: inherit;
+		transition: 1s ease;
+
+		nav ul li {
+			margin: 1rem 0.5rem;
+			text-align: center;
+			padding: 0;
+			border-radius: 10px;
+
+			a {
+				padding: 0.75rem 1rem;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+			}
+		}
+		&.hidden {
 			display: block;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			top: -100%;
 		}
-		span {
+	}
+}
+
+@media (min-width: 768px) {
+	#menu-bar {
+		display: flex;
+
+		#static-items {
+			width: 50%;
+
+			#menu-buttons {
+				display: none;
+			}
+		}
+		#pop-out {
 			display: block;
-			height: 1px;
-			line-height: 0px;
-			width: 100%;
-			background: #ffffff;
-		}
-		span:nth-child(1) {
-			transform: rotate(45deg);
-		}
-		span:nth-child(2) {
-			transform: rotate(-45deg);
+			padding: 10px 0;
+			position: relative;
+			top: 0;
+			nav {
+				padding: 0;
+				ul {
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					height: 40px;
+					li {
+						margin: 0 0 0 1rem;
+						border-radius: 10px;
+					}
+				}
+			}
 		}
 	}
 }
