@@ -73,14 +73,14 @@ export default {
 			"Open Sans": [300, 400, 600, 700],
 			Chivo: [300, 400, 700],
 			"Poiret One": true,
-			"Poller One": true,
+			"Poller One": [400],
 			// Monton: true,
 			Comfortaa: [300, 400, 600, 700, 900],
 			Raleway: {
 				wght: [100, 400],
 				ital: [100],
 			},
-			"Yeseva One": true,
+			"Yeseva One": [400],
 		},
 	},
 };
