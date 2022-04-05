@@ -1,5 +1,8 @@
 #menu-bar {
 	/* width: 100%; */
+	nav {
+		padding: 10rem 0.5rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -38,7 +41,7 @@
 	left: 0;
 	top: 51px;
 	background: inherit;
-	// border-radius: 10px;
+	transition: 1s ease;
 
 	nav ul li {
 		margin: 1rem 0.5rem;
@@ -67,17 +70,22 @@
 		padding: 0;
 	}
 	#menu-bar #pop-out nav ul {
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 		height: 40px;
 	}
 	#menu-bar #pop-out nav ul li {
-		// padding: 0.5rem 1rem;
-		// font-size: 14px;
 		margin: 0 0 0 1rem;
 		border-radius: 10px;
 	}
+}
+#pop-out {
+}
+#pop-out.show {
+	// outline: 1px solid #ff00ff;
+}
+#menu-bar #pop-out.hidden {
+	display: block;
+	top: -100%;
 }

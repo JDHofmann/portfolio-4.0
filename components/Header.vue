@@ -111,11 +111,15 @@ button {
 	&.hide-menu {
 		&.show {
 			display: block;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 		span {
 			display: block;
 			height: 1px;
 			line-height: 0px;
+			width: 100%;
 			background: #ffffff;
 		}
 		span:nth-child(1) {
