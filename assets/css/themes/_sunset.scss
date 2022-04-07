@@ -6,7 +6,7 @@
 	// $text: #ffffff;
 
 	$background: #081d41;
-	$text: #d2e4f0;
+	// $text: #d2e4f0;
 
 	$one: #eeaf61;
 	$two: #fb9062;
@@ -20,7 +20,7 @@
 
 	font-family: "Comfortaa";
 	background: $background;
-	color: $text;
+	color: $text-light;
 
 	h1 {
 		font-weight: 700;
@@ -49,6 +49,11 @@
 		}
 	}
 
+	.tooltip .tooltiptext {
+		background: $six;
+		color: $text-light;
+	}
+
 	button {
 		@include button($text-light);
 	}
@@ -62,7 +67,14 @@
 
 	#menu-bar {
 		background: $six;
+		#logo {
+			font-weight: 700;
+			text-transform: lowercase;
+		}
 		#pop-out {
+		}
+		#static-items #menu-buttons button span {
+			background: $text-light;
 		}
 		nav {
 			// padding: 5rem 0.5rem;

@@ -121,7 +121,7 @@ export default {
 						height: 1px;
 						width: 100%;
 						line-height: 0px;
-						background: #ffffff;
+						// background: #ffffff;
 					}
 				}
 				&.hide-menu {
@@ -136,13 +136,13 @@ export default {
 						height: 1px;
 						line-height: 0px;
 						width: 100%;
-						background: #ffffff;
+						// background: #ffffff;
 					}
 					span:nth-child(1) {
-						transform: rotate(45deg);
+						transform: rotate(45deg) translate(2%);
 					}
 					span:nth-child(2) {
-						transform: rotate(-45deg);
+						transform: rotate(-45deg) translate(2%);
 					}
 				}
 			}

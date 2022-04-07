@@ -90,6 +90,39 @@ main .hero {
 	}
 }
 
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 130px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	padding: 0.5rem;
+
+	/* Position the tooltip */
+	position: absolute;
+	top: 150%;
+	transform: translateX(-25%);
+	z-index: 1;
+	// &:before {
+	// 	content: "try out the";
+	// 	display: block;
+	// }
+	&:after {
+		content: "theme";
+		display: block;
+	}
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
 // @import "themes/midnight";
 @import "themes/southwest";
 @import "themes/seventies";

@@ -1,11 +1,10 @@
 <template>
 	<main class="content-wrapper">
 		<div class="hero">
-			<h1>Home</h1>
+			<h1>{{ author[0].name }}</h1>
+			<p>{{ author[0].position }}</p>
 		</div>
-		<section>
-			<p>{{ author[0].biographyShort }}</p>
-		</section>
+		<section></section>
 		<section>
 			<h2>Projects</h2>
 			<ul>
@@ -39,6 +38,9 @@ export default {
 </script>
 
 <style scoped>
+.hero h1 {
+	width: 100%;
+}
 button {
 	border: 5px solid #ffffff;
 }

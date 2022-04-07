@@ -1,7 +1,8 @@
 [
 	{
 		"biography": "I am web developer and musician. Since graduating Flatiron School's software engineering programming I have been working for ninety6 - Progressive's in-house creative agency. I enjoy building visually striking websites that keep accessibility in mind. ",
-		"biographyShort": "JD Brewer-Hofmann - Freelance Web Developer",
+		"name": "JD Brewer-Hofmann",
+		"position": "Web Developer",
 		"photo": {
 			"url": "/bio-pic.png",
 			"alt": "jungle"

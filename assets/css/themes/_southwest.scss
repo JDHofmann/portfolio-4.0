@@ -39,9 +39,18 @@
 	#logo {
 		font-family: "Chivo";
 	}
+	#logo {
+		font-weight: 700;
+		text-transform: lowercase;
+	}
 
 	p {
 		font-weight: 300;
+	}
+
+	.tooltip .tooltiptext {
+		background: $one;
+		color: $text;
 	}
 
 	li:nth-child(1) {
@@ -96,7 +105,11 @@
 	}
 	#menu-bar {
 		background: $eight;
-		color: $text-light;
+		background: $one;
+		color: $text-dark;
+		#static-items #menu-buttons button span {
+			background: $text-dark;
+		}
 		#pop-out {
 			a:hover {
 				color: #ffffff;

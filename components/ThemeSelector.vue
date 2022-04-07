@@ -2,16 +2,20 @@
 	<div class="content-wrapper theme-selector">
 		<section>
 			<!-- <details> -->
-			<!-- <span>Change Theme</span> -->
 			<div id="theme-selector">
-				<button @click="changeTheme('seventies-theme')">
+				<button @click="changeTheme('seventies-theme')" class="tooltip">
 					Seventies
+					<span class="tooltiptext">Seventies</span>
 				</button>
 
-				<button @click="changeTheme('sunset-theme')">Sunset</button>
+				<button @click="changeTheme('sunset-theme')" class="tooltip">
+					Sunset
+					<span class="tooltiptext">Sunset</span>
+				</button>
 
-				<button @click="changeTheme('southwest-theme')">
+				<button @click="changeTheme('southwest-theme')" class="tooltip">
 					Southwest
+					<span class="tooltiptext">Southwest</span>
 				</button>
 			</div>
 			<!-- </details> -->
