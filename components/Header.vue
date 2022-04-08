@@ -155,7 +155,7 @@ export default {
 		left: 0;
 		top: 51px;
 		background: inherit;
-		transition: 1s ease;
+		transition: 0s;
 
 		nav ul li {
 			margin: 1rem 0.5rem;
@@ -164,6 +164,8 @@ export default {
 			border-radius: 10px;
 
 			a {
+				transition: 1s ease;
+
 				padding: 0.75rem 1rem;
 				display: block;
 				width: 100%;
@@ -181,7 +183,6 @@ export default {
 @media (min-width: 768px) {
 	#menu-bar {
 		display: flex;
-
 		#static-items {
 			width: 50%;
 
