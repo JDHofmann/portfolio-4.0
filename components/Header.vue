@@ -206,10 +206,48 @@ export default {
 					li {
 						margin: 0 0 0 1rem;
 						border-radius: 10px;
+						transition: 2s linear;
+						animation-duration: 2s;
+						animation-name: pulsing;
+						animation-iteration-count: infinite;
+						animation-direction: alternate;
+						filter: saturate(90%);
+						transform: scale(1);
+						&:nth-child(1) {
+							animation-delay: 0s;
+						}
+						&:nth-child(2) {
+							animation-delay: 1s;
+						}
+						&:nth-child(3) {
+							animation-delay: 2s;
+						}
+						&:nth-child(4) {
+							animation-delay: 3s;
+						}
+						a {
+							transition: 2s linear;
+						}
 					}
 				}
 			}
 		}
 	}
+}
+
+@keyframes pulsing {
+	from {
+		filter: saturate(90%);
+		transform: scale(1);
+		// outline: 0px solid;
+	}
+	to {
+		// outline: 10px solid #ffffff;
+		filter: saturate(100%);
+		transform: scale(1.03);
+	}
+	// 100% {
+	// 	outline: 0px solid;
+	// }
 }
 </style>
